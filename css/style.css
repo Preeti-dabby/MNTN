@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #0A1D27;
+    line-height: 20px;
+    color: #fff;
+    overflow-x: hidden;
+
+}
+img {
+    width: 100%;
+    display: block;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+}
+nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+nav i {
+    font-size: 20px;
+    color: #fff;
+    padding-right: 8px;
+    
+}
+nav a:hover{
+    color: #fbd784;
+}
+
+section {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    padding: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section #hero {
+    position: absolute;
+    font-size: 70px;
+    font-family: "DM Serif Display", serif;
+    color: #ffff;
+    text-align: center;
+}
+section img {
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hg {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+.mg {
+    position: absolute;
+    top: 25%;
+}
+.vg {
+    position: absolute; 
+    top: auto; 
+}
+
+
+
+
+
+
+
+.content-section {
+    font-size: 14px;
+     display: flex;
+     justify-content: center;
+     width: 90%;
+     padding-left: 40px;
+   
+}
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 0%;
+    flex-direction: row;
+    
+}
+
+.grid {
+    display: flex;
+    height: 70vh
+        
+}
+
+.img {
+    flex: 1;
+        
+}
+
+
+.count {
+    position: absolute;
+    left: -100px;
+    /* bottom: 320px; */
+    z-index: -1;
+    opacity: 0.1;
+    font-size: 200px;
+    line-height: 100%;
+    font-weight: 700;
+    padding-left: 25px;
+}
+
+.content-text {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 50px;
+
+}
+
+.tagline {
+    display: flex;
+    margin-bottom: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #fbd784;
+}
+
+.tagline-line {
+    width: 72px;
+    height: 2px;
+    margin-right: 24px;
+    background-color: #fbd784;
+}
+
+/* --h5--*/
+.heading-tagline  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 24px;
+    font-family: serif;
+    font-size: 64px;
+    line-height: 110%;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+footer {
+    padding: 30px 10px;
+}
+footer img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #A1A6B4;
+}
+
+.copyright a {
+    color: #A1A6B4;
+    text-decoration: underline;
+}
+
+.footer-left {
+    width: 170px;
+    color: white;
+   
+}
+
+.footer-right {
+    flex-direction: 1;
+
+}
+
+.copyright {
+    
+    opacity: 0.5;
+}
+
+.foot-heading {
+    font-size: 18px; 
+    color: #FBC177;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.foot-list { 
+    list-style-type: none;
+    color: white;
+    margin-bottom: 15px;
+    justify-content: left;
+    padding: 0;
+    
+}
