@@ -37,33 +37,75 @@
             </div>
         </nav>
     </header>
+
     <section>
-        <div id="hero">
-          Be Prepared For The Mountains And Beyond!  
+        <div id="Firsttext" class="content-hero">
+            <div class="tagline ">
+                <div class="tagline-line"></div>
+                <h5 class="heading-tagline" >A Hiking Guide</h5>   
+            </div>
+            <p>Be Prepared For The Mountains And Beyond!</p>
+            <a href="#" id="btn">Scroll down <span style="padding-left: 6px;"> &DownArrow;</span></a>
         </div>
-        <div><img src="images/HG.png" alt="clouds" class="hg"></div>
-        <div><img src="images/MG.png" alt="mountains" class="mg"></div>
-        <div><img src="images/VG.png" alt="man-on-mountain" class="vg"> </div>
-          
+        
+        <div><img src="images/BG Hero.png" alt="bg-hero" id="bg-hero"></div>
+        <div><img src="images/HG.png" alt="clouds" class="hg" id="clouds"></div>
+        <div><img src="images/MG.png" alt="mountains" class="mg" id="mountains"></div>
+        <div><img src="images/VG.png" alt="man-on-mountain" class="vg" id="man"> </div>
     </section>
     
     <div class="content-section">
         <div class="content-wrapper">
-            <div class="grid">
+           
                 <div id="content-1" class="content-text">
                     <div class="count">01</div>
                     <div class="tagline">
                         <div class="tagline-line"></div>
                         <h5 class="heading-tagline">Get Started</h5>
                     </div>
-                    <h2 class="head">What level of &nbsp; hiker are you?</h2>
-                    <p>
+                    <h2 class="head">What level of hiker are you?</h2>
+                    <p class="description">
                         Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? 
                     </p>
+                    <a href="#" class="tagline">Read More <span style="padding-left: 10px;"> &#8594</span></a>
                 </div>
-                <img class="img" src="images/01.png" alt class="image_01">
-            </div>
+                <img class="img-container" src="images/01.png" alt="image_01">
         </div>
+        <div class="content-wrapper">
+            <img class="img-container" src="images/02.png" alt="image_02">
+            <div id="content-2" class="content-text">
+                <div class="count">02</div>
+                <div class="tagline">
+                    <div class="tagline-line"></div>
+                    <h5 class="heading-tagline">Hiking Essentials</h5>
+                </div>
+                <h2 class="head">Picking the right Hiking Gear!</h2>
+                <p class="description">
+                    The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
+                    Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.
+                </p>
+                <a href="#" class="tagline">Read More <span style="padding-left: 10px;"> &#8594</span></a>
+            </div>
+            
+    </div>
+    <div class="content-wrapper">
+           
+        <div id="content-3" class="content-text">
+            <div class="count">03</div>
+            <div class="tagline">
+                <div class="tagline-line"></div>
+                <h5 class="heading-tagline">where you go is the key</h5>
+            </div>
+            <h2 class="head">Understand Your Map & Timing</h2>
+            <p class="description">
+                To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, 
+                I’ll read the guide and know that say, in a mile, I make a right turn at the junction..
+            </p>
+            <a href="#" class="tagline">Read More <span style="padding-left: 10px;"> &#8594</span></a>
+        </div>
+        <img class="img-container" src="images/03.png" alt="image_03">
+</div>
+
     </div>
 
    
@@ -101,6 +143,19 @@
         </div>
 
     </footer>
-    
+    <script>
+        let clouds = document.getElementById('clouds');
+        let mountains = document.getElementById('mountains');
+        let man = document.getElementById('man');
+        let Firsttext = document.getElementById('Firsttext');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            clouds.style.top = value * -0.5 + 'px';
+            Firsttext.style.top = value * 1.05 + 'px';
+            
+        })
+    </script>
 </body>
 </html>
