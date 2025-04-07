@@ -145,9 +145,11 @@
 
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
-            clouds.style.top = value * -0.5 + 'px';
-            Firsttext.style.top = value * 1.05 + 'px';
             
+            Firsttext.style.top = value * 1.05 + 'px';
+            clouds.style.transform = `translateY(${value * -0.9}px)`;
+            mountains.style.transform = `translateY(${value * -0.5}px)`;
+            man.style.transform = `translateY(${value * -0.3}px)`;
         })
     </script>
 </body>
